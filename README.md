@@ -323,14 +323,14 @@ def colocacao():#criando um afunção chamada 'colocacao'
     for i in sorted(dic, key = dic.get, reverse=True):#percorrendo o dicionario colocando key e values em ordem descrecente
         print(i, dic[i])#apresentando o resultado
  
-colocacao()#Chamando a função chamamada ' colocacao'
+colocacao()#Chamando a função chamada 'colocacao'
 ```
 
 
 
 
 ## Autor 
-:snake:
+:snake: :hourglass: :heart:
 ```python
 print("Adalto Carvalho Ribeiro Simão Junior.")
 ```
