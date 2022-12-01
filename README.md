@@ -4,14 +4,14 @@ Exercícios em Linguagem de Programação Python
 <img src = "img.png">
 
 
-```
+```python
 #PRIMEIRO PROGRAMA EM PYTHON: Olá Mundo!
 print("Olá Mundo!")
 ```
-```
-#Faça um programa que leia 5 números com a soma e médias deles.
+```python
+#Faça um programa que leia python5 números com a soma e médias deles.
 n1 = float(input("Digite um numero: "))
-n2 = float(input("Digite outro numero: "))
+n2 = float(input("Digpythonite outro numero: "))
 n3 = float(input("Digite outro numero: "))
 n4 = float(input("Digite outro numero: "))
 n5 = float(input("Digite outro numero: "))
@@ -20,23 +20,23 @@ print("---------------------------------")
 print("A SOMA dos numeros digitados é: ", n1+n2+n3+n4+n5)
 print("A MÉDIA dos numeros digitados é: ", (n1+n2+n3+n4+n5)/5)
 ```
-```
+```python
 # Escreva um algoritmo que armazene o valor 10 em uma variável A e o valor 20 em uma variável B.
 # A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em A
 # passe para B e vice-versa.
 # Ao final, escrever os valores que ficaram armazenados nas variáveis;
 a = 10
 b = 20
-print('Valores de A e B: ',a , 'e',b)
+print('Valores pythonde A e B: ',a , 'e',b)
 a, b = 20, 10
 print('Valores trocados de A e B: ',a, 'e',b)
 ```
-```
+```python
 #Escreva um algoritmo para ler o número total de eleitores de um município,
 #o número de votos brancos, nulos e válidos. Calcule e escreva o percentual
 #que cada um representa em relação ao total de eleitores;
 eleitores =  int(input('Digite o numero total de eleitores: '))
-branco = int(input('Digite o numero total de votos brancos: '))
+branco = pythonint(input('Digite o numero total de votos brancos: '))
 nulos  = int(input('Digite o numero total de votos nulos: '))
 validos = int(input('Digite o numero total de votos válidos: '))
 print('------------------------------------------------------------')#Espaço
@@ -47,7 +47,7 @@ if eleitores == (branco + nulos + validos):
 else:
     print('Erro! os valores digitados não correspondem ao numero total de eleitores.')
 ```
-```
+```python
 #Escreva um algoritmo para ler uma temperatura em graus Fahrenheit e, calcule e
 #escreva o valor correspondente em graus Celsius. Fórmula: (°F − 32) ÷ 1, 8.
 temp = float(input('Digite uma temperatura °F: '))
@@ -56,7 +56,7 @@ print('---------------------------------------')
 print('Temperatura em F°:', temp)
 print('Temparatura convertida em °C:', round(fomrm, 2))
 ```
-```
+```python
 #Faça um programa que leia o sexo de uma pessoa, identificado pelos valores ‘M’ ou ‘F’.
 #Caso esteja errado, peça para digitar novamente.
 sexo = input('Digite o sexo, M - Masculino e F - Feminino: ')
@@ -73,7 +73,7 @@ elif sexo == 'F' or sexo == 'f':
 
 ### CONDICIONAIS [1]:
 
-```
+```python
 #programa que ler três numeros e imprime o maior.
 n1 = int(input("Digite um numero: "))
 n2 = int(input("Digite outro numero: "))
@@ -88,7 +88,7 @@ elif n3 > n2 and n3 > n1:
 ```
 ### LAÇO FOR e CONDICIONAIS [1]:
 
-```
+```python
 #programa que ler valor inteiro e mostra a tabuada de 1 a 10 do valor lido de acordo com a operação informada.
 print("-----TABUADA DE 10-----")
 n = int(input("Digite o numero para obter a sua tabuada: "))
@@ -105,7 +105,7 @@ for x in range (1, 11):
 ```
 ### ESTRUTURA DE REPETIÇÃO FOR [1]:
 
-```
+```python
 #Imprime na tela os numeros de 1 a 50 ímpares.
 for x in range(1, 51):
     if x % 2 == 1:
@@ -113,7 +113,7 @@ for x in range(1, 51):
 ```
 ### FOR ANINHADO [1]:
 
-```
+```python
 #dado uma lista com nomes. Exibir os nomes com a lista de sobrenomes.
 nomes = ['Adalto', 'Aline', 'Laura', 'Sara']
 sobreN = ['Carvalho', 'Marinho']
@@ -125,7 +125,7 @@ for x in nomes:
 ```
 ### ESTRUTURA DE REPETIÇÃO WHILE e CONDICIONAIS[3]:
 
-```
+```python
 #programa que ler nome  e senha e não aceita senha igual ao nome,
 #mostrando mensagem de erro e voltando a pedir o nome.
 h = 0
@@ -138,8 +138,7 @@ while nome == senha:
 if nome != senha:
     print("NOME e SENHA Gravados com SUCESSO.")    
 ```
-```
-
+```python
 #ESTRUTURA DE REPETIÇÃO {WHILE}: empresa de energia faz leitura mensal dos medidores de consumo, calculando os seguintes dados:
 #1. Número do consumidor
 #2. Consumo Kwh mês
@@ -178,7 +177,7 @@ print(contTipo1)
 print("Total de consumo do tipo1: ", somaConsumo1, "tipo2: ", somaConsumo2,  "Tipo3: ", somaConsumo3)
 print("A Média de Consumo do Tipo1 é: ",somaConsumo1/contTipo1,"e do Tipo2 é: ",somaConsumo2/contTipo2) 
 ```
-```
+```python
 #'X' equipes de 3 jogadores em um campeonato de arco e flecha não tiveram
 #os mesmos pontos,crie um programa que informe se uma equipe foi classificada seguindos os critérios: 1.ler 
 #pontos obitido por cada jogador da equipe, 2.mostrar eses valores em ordem decrecente, 3.se a soma for
@@ -199,7 +198,7 @@ while x < eqp:
 
 ### LISTAS [5]:
 
-```
+```python
 #ler lista de 10 numeros inteiros e mostra na ordem inversa
 lista = []
 for x in range(1,11):
@@ -208,7 +207,7 @@ for x in range(1,11):
 lista.reverse()
 print(lista)
 ```
-```
+```python
 #ler 4 notas e em seguida exibe as notas e a media
 lista = []
 for x in range(1, 4+1):
@@ -218,7 +217,7 @@ for x in range(1, 4+1):
 print("Notas: ",lista)
 print("Media: ", sum(lista)/4)
 ```
-```
+```python
 #ler 20 idades e mostra a idade maior e a menor
 lista = []
 for x in range(20):
@@ -228,7 +227,7 @@ print()
 print("Idade Maxima: ",max(lista))
 print("Idade minima: ", min(lista))
 ```
-```
+```python
 #armazenar 10 letras em uma lista e imprime uma listagem enumerada.
 lista = []
 for x in range(10):
@@ -237,7 +236,7 @@ for x in range(10):
 for x,i in enumerate(lista):
     print(x+1, "° =", i)
 ```
-```
+```python
 #Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule e armazene a média.
 #armazene também a situação do aluno: 1- Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno. Utilize quantas listas forem necessárias para armazenar os dados.
@@ -256,7 +255,7 @@ for x in range(1,3):
 ```
 ### TUPLAS [2]:
 
-```
+```python
 #dada uma tupla com N valores, remova todos so numeros pares da tupla
 t = ()
 print(type(t))
@@ -270,7 +269,7 @@ for i in range(n):
 print()
 print('Numeros impares digitados dentro da tupla: ', type(t), t)
 ```
-```
+```python
 #dada duas tuplas com N valores reais que representa as notas de uma turma
 #calcule a media da turma nas provas 1 e 2, imprimindo em qual das provas a turma
 #obteve a melhor media
@@ -294,15 +293,44 @@ else:
         print('Media Prova 01: ', m1, '||  Média Prova 02: ', m2)
         print('A média das 2° provas foram melhores que a da 1° nessa turma!')
 ```
+### DICT [0]:
+
+```python
 
 ```
+### FUNÇÕES [1]:
+
+```python
+#Faça um código no qual tenha como principal finalidade definir as colocações dos participantes, leve em conta que,
+#é impossível haver empate técnico, a saída do código deverá dizer o nome do participante e sua pontuação adjunto 
+#da sua colocação final e por fim defina uma função que consiga abranger todo código e a execute com as pontuações abaixo . 
+#Lucas - 1454 pontos
+#Pedro - 1243 pontos
+#Ricardo - 1452 pontos
+
+def colocacao():#criando um afunção chamada 'colocacao' 
+    dic = {}#criando um dicionario vazio
+    x = 0
+    n = int(input("Informe o número de participantes: "))
+    print()#espaço
+    while x < n:#laço que ira solicitar nome e pontução conforme numero de participantes informados.
+        x+=1
+        nome = input(f"Informe o nome do participante N° {x}:  ")#recebe o nome do participante.
+        pont = int(input(f"Informe a pontuação do participante N° {x}: "))#recebe a prontução do participante.
+        dic.update({nome: pont})#adicionando chave e valores ao dicionario.
+    print()#espaço
+    print("Classificação 1°, 2°, 3° Lugar:")
+    for i in sorted(dic, key = dic.get, reverse=True):#percorrendo o dicionario colocando key e values em ordem descrecente
+        print(i, dic[i])#apresentando o resultado
+ 
+colocacao()#Chamando a função chamamada ' colocacao'
 ```
 
+
+
+
+## Autor 
+:snake:
+```python
+print("Adalto Carvalho Ribeiro Simão Junior.")
 ```
-```
-
-
-
-
-## Autor
-:snake:  Adalto Carvalho RIbeiro Simão Junior.
