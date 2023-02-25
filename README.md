@@ -3,13 +3,31 @@ Exercícios em Linguagem de Programação Python
 
 <img src = "img.png">
 
+### Operadores de Identidade:
+    is - retorna 'true' sem ambas as variáveis são o mesmo objeto
+
+    is not - retorna 'true' sem ambas as variáveis NÃO são o mesmo objeto
+
+### Operadores de Associação:
+    in - retorna 'true' caso o valor seja encontrado na sequência
+
+    not in - retorna 'true' caso o valor não seja encontrado na sequência
+
+### Exemplo de Funções/Métodos
+    Função round(): Arredonda para cima ou para baixo
+    
+    Método math.floor(): Arredonda para baixo, até o inteiro mais próximo
+    
+    Método math.ceil(): Arredonda para cima, até o inteiro mais próximo
+    
+    Função type(): Verifica o typo da variável
 
 ```python
 #PRIMEIRO PROGRAMA EM PYTHON: Olá Mundo!
 print("Olá Mundo!")
 ```
 ```python
-#Faça um programa que leia python5 números com a soma e médias deles.
+#Faça um programa que leia 5 números com a soma e médias deles.
 n1 = float(input("Digite um numero: "))
 n2 = float(input("Digpythonite outro numero: "))
 n3 = float(input("Digite outro numero: "))
@@ -71,7 +89,7 @@ elif sexo == 'F' or sexo == 'f':
         print('Sexo digitado Feminino.')
 ```
 
-### CONDICIONAIS [1]:
+### CONDICIONAIS [5]:
 
 ```python
 #programa que ler três numeros e imprime o maior.
@@ -86,6 +104,68 @@ elif n2 > n3 and n2 > n1:
 elif n3 > n2 and n3 > n1:
     print("Numero maior", n3)
 ```
+
+```python
+#João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez
+#que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar
+#uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes)e 
+#calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João
+#deverá pagar. Imprima os dados do programa com as mensagens adequadas.
+pesoPeixes = float(input("Informe o valor do peso diário: "))
+excesso = float
+multa = float
+if pesoPeixes > 50:
+    excesso = pesoPeixes-50
+    multa = excesso*4.00   
+    print("O excedente de peso diário foi: ", excesso, "Kg") 
+    print("Valor a pagar de MULTA: ", multa, "Reais")    
+else:
+    print("Peso diário dentro da norma!")
+```
+
+```python
+#Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser 
+#apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+n1 = int(input('Digite um valor inteiro: '))
+n2 = int(input('Digite outro valor inteiro: '))
+soma = n1+n2
+if soma>20:
+    print("Maior que vinte: ", soma+8)
+elif soma<=20:
+    print("Menor que vinte: ", soma-5)
+```
+
+```python
+#Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+x = int(input('Informe um número: '))
+if x % 3 == 0 and x % 3 == 0:#Utilização do op. lógico 'AND'. Verdade se ambas as condições forem Verdadeiras
+    print('Numero Divisível por 3 ou 7!!')
+else:
+   print('Numero NÃO Divisível por 3 ou 7!!')   
+```
+
+```python
+#Depois da liberação do governo para as mensalidades dos planos de saúde, as pessoas começaram a fazer pesquisas para descobrir um
+#bom plano, não muito caro. Um vendedor de um plano de saúde apresentou a tabela a seguir. Faça um programa que entre com o nomee a
+#idade de uma pessoa e imprima o nome e o valor que ela deverá pagar. Idade Até 10 anos - R$30,00. Acima de 10 até 29 anos - R$60.00.
+#Acima de 29 até 45 anos - R$120,00. Acima de 45 até 59 anos - R$150,00. Acima de 59 até 65 anos - R$250,00. Maior que 65 anos - R$400,00
+print('*****TABELA PLANO DE SAÚDE UPCARE*****')
+nome  = input("Informe o seu nome: ")
+id = int(input("Informe a sua idade: "))
+if id <= 10:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 30,00 no nosso plano.')
+elif id > 10 and id <= 29:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 60,00 no nosso plano.')
+elif id > 29 and id <= 45:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 120,00 no nosso plano.')
+elif id > 45 and id <= 59:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 150,00 no nosso plano.')
+elif id > 59 and id <= 65:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 250,00 no nosso plano.')
+elif id > 65:
+    print('Olá', nome, ', A sua mensalidade será de: R$ 400,00 no nosso plano.')
+```
+
 ### LAÇO FOR e CONDICIONAIS [1]:
 
 ```python
